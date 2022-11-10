@@ -5,8 +5,6 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import { useNavigate } from "react-router-dom";
-import { useContext } from "react";
-import { Context } from "../App";
 
 function Signout() {
   const navigate = useNavigate();

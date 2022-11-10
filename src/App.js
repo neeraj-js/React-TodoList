@@ -5,7 +5,6 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Signin from "./components/signin";
 import Protected from "./components/Protected";
 import Signout from "./components/Signout";
-import Edittab from "./components/edittab";
 
 export const Context = createContext();
 
@@ -29,7 +28,10 @@ function App() {
     >
       <BrowserRouter>
         <Routes>
-          <Route path="/*" element={<Signin />}>
+          <Route path="/" element={<Signin />}>
+            {" "}
+          </Route>
+          <Route path="/*" element={<h1>404 not found</h1>}>
             {" "}
           </Route>
           <Route
